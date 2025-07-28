@@ -1,6 +1,6 @@
 <script lang="ts">
     import heroImage from '$assets/hero.png';
-    import {Button} from '$components';
+    import { Button } from '$components';
 </script>
 
 <section class="default-margin hero">
@@ -15,7 +15,7 @@
             Our app offers a beautifully designed, easy-to-use interface that makes
             managing your book collection a joy
         </h4>
-       
+       <Button href="/register">Sign Up</Button>
     </div>
     <!-- svelte-ignore a11y_img_redundant_alt -->
     <img class="hero-image" src={heroImage} alt="Hero Image" />

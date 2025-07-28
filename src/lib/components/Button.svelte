@@ -28,9 +28,9 @@
 {#if href}
     <a {href} 
        class="btn"
-       class:secondary={isSecondary}
-       class:danger={isDanger}
-       class:menu={isMenu}
+       class:btn-secondary={isSecondary}
+       class:btn-danger={isDanger}
+       class:btn-menu={isMenu}
     >
         {@render children()}
     </a>
@@ -39,15 +39,25 @@
      {...props} 
      {onclick} 
      class="btn"
-     class:secondary={isSecondary}
-     class:danger={isDanger}
-     class:menu={isMenu}
+     class:btn-secondary={isSecondary}
+     class:btn-danger={isDanger}
+     class:btn-menu={isMenu}
      >
         {@render children()}
     </button>
 {/if}
 
 <style>
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+
     .btn {
         min-width: 230px;
         text-align: center;
@@ -60,7 +70,7 @@
     }
 
     .btn-secondary {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         color: black;
         border: 1px solid black;
     }

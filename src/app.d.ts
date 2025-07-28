@@ -10,4 +10,6 @@ declare global {
 	}
 }
 
+// Add Svelte module declarations
+
 export {};
