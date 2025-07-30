@@ -10,8 +10,9 @@
 
     interface ButtonProps extends BasicProps 
     {
-        onclick: (e: MouseEvent) => void;
+        onclick?: (e: MouseEvent) => void;
         href?: never;
+        type?: "button" | "submit" ;
     }
 
     interface LinkProps extends BasicProps 
