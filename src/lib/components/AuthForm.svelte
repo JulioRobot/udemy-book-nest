@@ -10,7 +10,7 @@
 <div class="default-margin auth-container">
 	<h1 class="mb-l">{isRegistration ? 'Register' : 'Login'}</h1>
 	<div class="form-and-social-login">
-		<form class="auth-form">
+		<form class="auth-form" method="post">
 			{#if isRegistration}
 				<input placeholder="Name" type="text" name="name" />
 			{/if}
